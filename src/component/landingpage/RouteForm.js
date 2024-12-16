@@ -20,8 +20,12 @@ const BusRouteForm = () => {
         required
       >
         <option value="">-- Select Route --</option>
-        <option value="annandnagar">LNCT to Anand Nagar</option>
         <option value="indrapuri">LNCT to Indrapuri</option>
+        <option value="piplani">LNCT to piplani</option>
+        <option value="ayodhya">LNCT to ayodhya</option>
+        <option value="prabhatam">LNCT to prabhatam</option>
+        <option value="patel nagar">LNCT to patel nagar</option>
+        <option value="annandnagar">LNCT to Anand Nagar</option>
       </select>
       <br />
       {selectedRoute && (

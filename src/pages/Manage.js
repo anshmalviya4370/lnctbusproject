@@ -100,8 +100,8 @@ const Manage = () => {
               <p>
                 <strong>Bus Number:</strong> {bus.name}
               </p>
-              <p>
-                <strong>Driver Name:</strong> {bus.driverName}
+              <p className="manageDelete">
+                <strong>Driver Name:</strong> {bus.driverName}{" "}
               </p>
             </li>
           ))}

@@ -34,7 +34,7 @@ const LandingPage = () => {
                 hassle-free journey for students and staff.
               </p>
 
-              <a href="signup.html" className="cta-button">
+              <a href="#search-route" className="cta-button">
                 Get Started
               </a>
             </div>
@@ -94,8 +94,12 @@ const LandingPage = () => {
                       : "none",
                   }}
                 />
-                <h3>Live Tracking</h3>
-                <p>Track buses in real-time for better commute planning.</p>
+                <h3> Dynamic Bus Reassignment</h3>
+                <p>
+                  {" "}
+                  Utilizes driver-provided crowd ratings to reallocate buses
+                  effectively
+                </p>
               </div>
               <div className="feature-item">
                 {!featureImagesLoaded.bookingIcon && (
@@ -109,8 +113,11 @@ const LandingPage = () => {
                     display: featureImagesLoaded.bookingIcon ? "block" : "none",
                   }}
                 />
-                <h3>Seat Booking</h3>
-                <p>Reserve seats for daily or special commutes with ease.</p>
+                <h3>Driver Rating System</h3>
+                <p>
+                  Enables drivers to report real-time crowd density in their
+                  buses.
+                </p>
               </div>
             </div>
           </section>

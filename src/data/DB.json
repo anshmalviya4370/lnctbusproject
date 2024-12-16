@@ -110,9 +110,9 @@
       {
         "id": 3,
         "name": "MP 04 1916",
-        "status": "assigned",
+        "status": "unassigned",
         "driverName": "driver3",
-        "routeName": "prabhat"
+        "routeName": null
       },
       {
         "id": 4,
@@ -146,15 +146,15 @@
         "id": 8,
         "name": "MP 04 1921",
         "driverName": "driver8",
-        "status": "unassigned",
-        "routeName": null
+        "status": "assigned",
+        "routeName": "prabhatam"
       },
       {
         "id": 9,
         "name": "MP 04 1922",
         "driverName": "driver9",
-        "status": "unassigned",
-        "routeName": null
+        "status": "assigned",
+        "routeName": "patel nagar"
       },
       {
         "id": 10,
