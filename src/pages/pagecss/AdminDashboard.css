@@ -1,0 +1,129 @@
+.dashboard-container {
+  min-width: 900px;
+  max-width: 80vw;
+  height: auto;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--black);
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 10px;
+}
+
+.management-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Bus Item Details */
+.bus-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: var(--yellow);
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.bus-item:hover {
+  transform: scale(1.02);
+}
+
+.bus-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bus-details p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.status-and-action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Status Indicators */
+.status-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--black);
+}
+
+.status-circle.green {
+  background-color: var(--green);
+}
+
+.status-circle.orange {
+  background-color: var(--orange);
+}
+
+.status-circle.red {
+  background-color: var(--red);
+}
+
+/* Action Button Styling */
+.manage-button {
+  padding: 8px 12px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.manage-button:hover {
+  background-color: orangered;
+  color: var(--black);
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Messages */
+.error-message {
+  text-align: center;
+  color: var(--red);
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Responsive Admin Panel */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .dashboard-title {
+    font-size: 1.5rem;
+  }
+
+  .bus-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .status-and-action {
+    justify-content: flex-start;
+  }
+}

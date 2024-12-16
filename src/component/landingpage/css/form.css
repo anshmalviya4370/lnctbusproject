@@ -1,0 +1,67 @@
+#search-route {
+  padding: 40px 20px;
+  background-color: var(--gray);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#form-container h2 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+label {
+  font-size: 1rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+select {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: var(--yellow);
+}
+
+.landing-page-from-button {
+  padding: 12px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.landing-page-from-button:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
+.landing-page-from-button:active {
+  background-color: var(--orange);
+}

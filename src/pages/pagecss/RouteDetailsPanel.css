@@ -1,0 +1,102 @@
+:root {
+  --yellow: #ffd700;
+  --black: #333333;
+  --red: #dc3545;
+  --green: #28a745;
+  --white: #ffffff;
+  --gray: #f0f0f0;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.route-panel-container {
+  color: var(--black);
+  width: 80vw;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.route-panel-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Route Name */
+.route-name {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Section Titles */
+.assigned-buses h2,
+.assign-bus-section h2 {
+  font-size: 1.6rem;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+/* Bus List */
+.bus-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+}
+
+.bus-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--yellow);
+  border: 2px solid var(--black);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+  font-size: 1rem;
+}
+
+.bus-item p {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Buttons */
+.route-panel-container button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.remove-button {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.remove-button:hover {
+  background-color: var(--black);
+}
+
+.assign-button {
+  background-color: var(--green);
+  color: var(--white);
+  margin: 20px auto;
+}
+
+.assign-button:hover {
+  background-color: var(--black);
+}

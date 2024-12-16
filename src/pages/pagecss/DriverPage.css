@@ -1,0 +1,73 @@
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.assigned-info {
+  margin-bottom: 20px;
+}
+
+.assigned-info h2 {
+  margin-bottom: 10px;
+}
+
+.assigned-info p {
+  font-size: 16px;
+}
+
+.crowd-rating h2 {
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.rating-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.rating-btn.green {
+  background-color: green;
+}
+
+.rating-btn.orange {
+  background-color: orange;
+}
+
+.rating-btn.red {
+  background-color: red;
+}
+
+.rating-btn:hover {
+  opacity: 0.8;
+}
+
+.rating-btn.active {
+  border: 2px solid #fff;
+  transform: scale(1.1);
+}
+
+.driver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
